@@ -35,11 +35,9 @@ const Nav = styled.nav`
   padding:12px 0 16px ;
   display:flex;
   align-items:center;
-  ${'' /* justify-content:center; */}
   position:relative;
   justify-content:space-between;
   flex-wrap:nowrap;
-  ${'' /* background-color:green; */}
  
     & > a:first-child {
      width:135px ;
@@ -123,7 +121,6 @@ h1{
     line-height:2px;
   }}
   img{
-    ${'' /* z-index:-1; */}
     width:600px;
     height:600px;
     position:absolute;
