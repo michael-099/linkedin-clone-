@@ -1,21 +1,32 @@
 import styled from "styled-components";
 const Login = (probs) => {
-    return (<Container>
-        <Nav>
-            <a href="/">
-                <img src="img/LinkedIn-Logo.wine.svg" />
-            </a>
-            <Div>
-                <Join>join now</Join>
-                <Signin> Sign in</Signin>
-            </Div>
-
-        </Nav>
-    </Container>)
+  return (<Container>
+    <Nav>
+      <a href="/">
+        <img src="img/LinkedIn-Logo.wine.svg" />
+      </a>
+      <Div>
+        <Join>join now</Join>
+        <Signin> Sign in</Signin>
+      </Div>
+    </Nav>
+    <Section>
+      <Hero>
+        <h1>Welcome to your professional community</h1>
+        <img src="img/hero3.svg" width="" height="" />
+      </Hero>
+      <Form>
+        <Google>
+          <img src="img/google.svg" />
+          Sign in with Google
+        </Google>
+      </Form>
+    </Section>
+  </Container>)
 
 
 }
-const Div=styled.div`display:flex;`;
+const Div = styled.div`display:flex;`;
 const Container = styled.div`padding :0px;`;
 
 const Nav = styled.nav`
@@ -75,4 +86,82 @@ const Signin = styled.a`
 
   }
   `;
+const Section = styled.section`
+  display:flex;
+  align-content:start;
+
+  min-height:760px;
+  padding-bottom:138px;
+  padding-top:40px;
+  padding:60px 0;
+  position:relative;
+  flex-wrap:wrap;
+  max-width:1128px;
+  align-items:center;
+  margin:auto;
+  @media(max-width:768px){
+    margin:auto;
+    min-height:0px;
+    justify-content:center;
+
+  }
+
+  `;
+const Hero = styled.div` 
+width:100%;
+h1{
+  padding-bottom:0;
+  width:55%;
+  font-size:56px;
+  color:#2977c9;
+  font-weight:200;
+  line-height:70px;
+  @media(max-width:768px){
+    text-align:center;
+    font-size:20px;
+    width:100%;
+    line-height:2px;
+  }}
+  img{
+    ${'' /* z-index:-1; */}
+    width:600px;
+    height:600px;
+    position:absolute;
+    bottom:200px;
+    right:-70px;
+    @media(max-width:768px){
+    top:230px;
+    width:initial;
+    position:initial;
+    height:initial;
+};}`;
+const Google = styled.button`
+display:flex;
+justify-content:center;
+background-color:#fff;
+align-items:center;
+height:56px;
+width:100%;
+margin:auto;
+border-radius:30px;
+vertical-align:middle;
+box-shadow:inset 0 0 0 1px rgb(0 0 0 /60%) ,inset 0 0 0 2px rgba(0 0 0 /0%) inset 0 0 0 2px rgb(0 0 0 /0%) ;
+z-index:0;
+font-size:20px;
+color:rgba(0,0,0,0.6);
+:hover{
+   background-color:rgba(207,207,207,0.25);
+   color:rgba(0,0,0,0.75)
+}
+@media(max-width:760px){
+  margin:auto;
+}`;
+const Form = styled.div`
+margin-top:100px;
+width:408px;
+@media(max-width:760px){
+  margin-top:15px;
+}
+
+`;
 export default Login;
