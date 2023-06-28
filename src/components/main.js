@@ -1,10 +1,10 @@
 import styled from "styled-components";
 const Main=(probs)=>{
-    return
+    return(
     <Container>
     main
 
-    </Container>
+    </Container>)
 }
 const Container=styled.div`
 grid-area:RightSide;`;

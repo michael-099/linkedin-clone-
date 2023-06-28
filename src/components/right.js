@@ -1,10 +1,10 @@
 import styled from "styled-components";
 const Right=(probs)=>{
-    return
+    return(
     <Container>
     right side 
 
-    </Container>
+    </Container>)
 }
 const Container=styled.div`
 grid-area:RightSide;`;
