@@ -161,7 +161,7 @@ list-style-type:none;
         position:absolute;
         transition:transform 0.2s ease-in-out;
         width:100%;
-        border-color:rgba(o,0,0,0.9);
+        border-color:rgba(0,0,0,0.9);
     }
 }
 
