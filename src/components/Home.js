@@ -1,4 +1,7 @@
 import styled from "styled-components";
+import Left from "./left";
+import Right from "./right";
+import Main from "./main";
 const Home = (probs) => {
     return (
         <Container>
@@ -6,26 +9,26 @@ const Home = (probs) => {
                 <h5><a>Hiering in a hurry?</a></h5>
                 <p>Find talented pros in record </p>
             </Section>
-            <Layout> 
-            <div>Left Side </div>
-            <div>Main</div>
-            <div>Right Side</div>
+            <Layout>
+                <Left />
+                <Main />
+                <Right />
             </Layout>
         </Container>
 
     );
-   
-        
-} ;
-const Container=styled.div`
+
+
+};
+const Container = styled.div`
 padding:52px;
 max-width:100%;`;
-const Content=styled.div`
+const Content = styled.div`
 max -width:1128px
 margin-left:auto;
 margin-right:auto;
 `;
-const Section=styled.section`
+const Section = styled.section`
 min-height:50px;
 padding:16px 0;
 box-sizing:content-box;
@@ -50,7 +53,7 @@ justify-content:center;
     padding:0 5px;
     
  }`
- const Layout=styled.div`
+const Layout = styled.div`
  display:grid;
  grid-template-area:"LeftSide  Main RightSide";
  grid-template-columns:minmax(0,5fr) minmax(0,12fr) minmax(360px,7fr);
