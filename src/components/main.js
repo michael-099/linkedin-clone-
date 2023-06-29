@@ -7,6 +7,7 @@ const Main=(probs)=>{
     </Container>)
 }
 const Container=styled.div`
-grid-area:RightSide;`;
+grid-area:"Main";
+`;
 
 export default Main ;
