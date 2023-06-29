@@ -55,7 +55,7 @@ justify-content:center;
  }`
 const Layout = styled.div`
  display:grid;
- grid-template-area:"LeftSide  Main RightSide";
+ grid-template-area:"LeftSide Main RightSide";
  grid-template-columns:minmax(0,5fr) minmax(0,12fr) minmax(360px,7fr);
  column-gap:25px;
  row-gap:25px;
