@@ -7,6 +7,7 @@ const Right=(probs)=>{
     </Container>)
 }
 const Container=styled.div`
-grid-area:RightSide;`;
+grid-area:"RightSie";
+`;
 
 export default Right;
