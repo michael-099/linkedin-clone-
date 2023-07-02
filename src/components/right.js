@@ -22,7 +22,7 @@ const Right = (probs) => {
                     </li>
                     <li>
                         <a>
-                            <Avatar/>
+                            <Avatar />
                         </a>
                         <div>
                             <span>#vidio</span>
@@ -31,10 +31,14 @@ const Right = (probs) => {
                     </li>
                 </FeedList>
                 <Recom>
-                    view all recomendations 
+                    view all recomendations
+                    <img src="img/right-icon.svg" />
                 </Recom>
-                <img src="right-icon.svg"/>
+
             </FollowCard>
+            <Banner>
+                <img src="https://static-exp1.licdn.com/scds/common/u/images/promo/ads/li_evergreen_jobs_ad_300x250_v1.jpg" />
+            </Banner>
 
 
         </Container>)
@@ -62,7 +66,7 @@ font-size:16px;
 width:100%;
 color:rgba(0,0,0,0.6);
 `;
-const FeedList=styled.ul`
+const FeedList = styled.ul`
 margin-top:16px;
 li{
     display:flex;
@@ -91,7 +95,7 @@ li{
         outline:none;
     }
 }`;
-const Avatar=styled.div`
+const Avatar = styled.div`
 ${'' /* background-img:url("https//static-exp1.licdn.com/sc/h/1b4vlr54ijmrmcyxzoidwmxs"); */}
 background-image: url("https://static-exp1.licdn.com/sc/h/1b4vl1r54ijmrmcyxzoidwmxs");
 background-size:contain;
@@ -100,6 +104,19 @@ background-repeat:no-repeat;
 width:48px;
 height:48px;
 margin-right:8px;
+`;
+const Recom = styled.a`
+color:#0a66c2;
+display:flex;
+align-items:center;
+font-size:14px;
+`;
+const Banner = styled.a`
+img{
+    width:100%;
+    height:100%;
+}
+
 `;
 
 
