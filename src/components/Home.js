@@ -21,7 +21,7 @@ const Home = (probs) => {
 
 };
 const Container = styled.div`
-padding:52px 5px;
+padding:52px 15px;
 max-width:100%;`;
 const Content = styled.div`
 max -width:1128px
@@ -56,7 +56,7 @@ justify-content:center;
 const Layout = styled.div`
  display:grid;
  grid-template-area:"LeftSide Main RightSide";
- grid-template-columns:minmax(0,8fr) minmax(0,12fr) minmax(360px,4fr);
+ grid-template-columns:minmax(0,7fr) minmax(0,12fr) minmax(360px,5fr);
  column-gap:25px;
  row-gap:25px;
  grid-template:auto;

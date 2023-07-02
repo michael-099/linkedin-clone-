@@ -30,6 +30,10 @@ const Right = (probs) => {
                         </div>
                     </li>
                 </FeedList>
+                <Recom>
+                    view all recomendations 
+                </Recom>
+                <img src="right-icon.svg"/>
             </FollowCard>
 
 
@@ -66,10 +70,10 @@ li{
     margin:12px 0;
     position:relative;
     font-size:14px;
-    a>div{
+    & > div{
         display:flex;
         flex-direction:column;
-    }
+    };
     button{
         background-color:transparent;
         color:rgba(0,0,0,0.6);
@@ -87,7 +91,16 @@ li{
         outline:none;
     }
 }`;
-const Avatar=styled.div``;
+const Avatar=styled.div`
+${'' /* background-img:url("https//static-exp1.licdn.com/sc/h/1b4vlr54ijmrmcyxzoidwmxs"); */}
+background-image: url("https://static-exp1.licdn.com/sc/h/1b4vl1r54ijmrmcyxzoidwmxs");
+background-size:contain;
+background-position:center;
+background-repeat:no-repeat;
+width:48px;
+height:48px;
+margin-right:8px;
+`;
 
 
 export default Right;
