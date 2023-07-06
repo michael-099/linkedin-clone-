@@ -1,62 +1,98 @@
 import styled from "styled-components";
-const Main=(probs)=>{
-    return(
-    <Container>
-    <ShareBox>Share
-    <div>
-        <img src="/img/user.svg"/>
-        <button>Start a post</button>
-    </div>
-    <div>
-    <button>
-        <img src="/img/nav-jobs.svg" />
-        <span>photo</span>
-    </button>
-    <button>
-        <img src="/img/nav-jobs.svg" />
-        <span>vidio</span>
-    </button>
-    <button>
-        <img src="/img/nav-jobs.svg" />
-        <span>Event</span>
-    </button>
-    <button>
-        <img src="/img/nav-jobs.svg" />
-        <span>write srticle </span>
-    </button>
-    </div>
-    </ShareBox>
-    <div>
-        <Article>
-<SharedActor>
-    <a>
-        
-        <img src="/img/user.svg"/>
-        <div>
-        <span>Title</span>
-        <span>Info</span>
-        <span>Date</span>
-        </div>
-    </a>
-    <button>
-    <img src="/img/ellipsis-svgrepo.svg"/>
-    </button>
-</SharedActor>
-<Description>description</Description>
-<SharedImg>
-<a>
-    <img src="/img/pxfuel.jpg"/>
-</a>
-</SharedImg>
+const Main = (probs) => {
+    return (
+        <Container>
+            <ShareBox>Share
+                <div>
+                    <img src="/img/user.svg" />
+                    <button>Start a post</button>
+                </div>
+                <div>
+                    <button>
+                        <img src="/img/nav-jobs.svg" />
+                        <span>photo</span>
+                    </button>
+                    <button>
+                        <img src="/img/nav-jobs.svg" />
+                        <span>vidio</span>
+                    </button>
+                    <button>
+                        <img src="/img/nav-jobs.svg" />
+                        <span>Event</span>
+                    </button>
+                    <button>
+                        <img src="/img/nav-jobs.svg" />
+                        <span>write srticle </span>
+                    </button>
+                </div>
+            </ShareBox>
+            <div>
+                <Article>
+                    <SharedActor>
+                        <a>
 
-        </Article>
-    </div>
-    </Container>)
+                            <img src="/img/user.svg" />
+                            <div>
+                                <span>Title</span>
+                                <span>Info</span>
+                                <span>Date</span>
+                            </div>
+                        </a>
+                        <button>
+                            <img src="/img/ellipsis-svgrepo.svg" />
+                        </button>
+                    </SharedActor>
+                    <Description>description</Description>
+                    <SharedImg>
+                        <a>
+                            <img src="/img/pxfuel.jpg" />
+                        </a>
+                    </SharedImg>
+                    <SocialCounts>
+                        <li>
+                            <button>
+                                <img src="/img/nav-jobs.svg" />
+                                <img src="/img/nav-jobs.svg" />
+                                <span>99</span>
+                            </button>
+
+
+                        </li>
+                        <li> 3 comments </li>
+                    </SocialCounts>
+                    <SocialActions>
+                        <button>
+                            <img src="/img/nav-jobs.svg" />
+                            <span>Like</span>
+
+                        </button>
+                        <button>
+                            <img src="/img/nav-jobs.svg" />
+                            <span>comment</span>
+
+                        </button>
+                        <button>
+                            <img src="/img/nav-jobs.svg" />
+                            <span>shre</span>
+
+                        </button>
+                        <button>
+                            <img src="/img/nav-jobs.svg" />
+                            <span>send</span>
+
+                        </button>
+                    </SocialActions>
+
+
+
+                </Article>
+            </div>
+        </Container>)
 }
-const Container=styled.div`
+const Container = styled.div`
 grid-area:"Main";
 `;
-const CommomCard=styled.div`
+const CommomCard = styled.div`
 text-align:center;
 overflow:hidden;
 margin-bottom:8px;
@@ -66,7 +102,7 @@ position:relative;
 border:none;
 box_shadow: 0 0 0 1px rgb(0 0 0/15%),0 0 0 rgb(0 0 0 /20%);
 `;
-const ShareBox=styled(CommomCard)`
+const ShareBox = styled(CommomCard)`
 display:flex;
 flex-direction:column;
 color:#958b7b;
@@ -136,7 +172,7 @@ overflow:visble;
 
 
 `;
-const SharedActor=styled.div`
+const SharedActor = styled.div`
 padding-right:40px;
 flex-wrap:nowrap;
 padding:12px 16px o;
@@ -182,7 +218,7 @@ button{
     border:none;
     outline:none;
 }`;
-const Description=styled.div`
+const Description = styled.div`
 paddinng:0 16px;
 overflow:hidden;
 color:rgba(0,0,0,0.9);
@@ -191,7 +227,7 @@ text-align:left;
 
 
 `;
-const SharedImg=styled.div`
+const SharedImg = styled.div`
 margin-top:8px;
 width:100%;
 display:block;
@@ -203,6 +239,43 @@ img{
     height:100%;
 }
 `;
+const SocialCounts = styled.ul`
+line-height:1.3;
+display:flex;
+align-items:flex-start;
+overflow:auto;
+margin:0 16px;
+padding:8px 0;
+border-bottom:1px solid #e9e5df;
+list-style:none;
+li{
+    margin-right:5px;
+    font-size:12px;
+    button{
+        display:flex;
+    }
+}`
+const SocialActions=styled.div`
+align-items:center;
+display:flex;
+justify-content:flex-start;
+margin:0;
+min-height:40px;
+padding:4px 8px;
 
+button{
+    display:inline-flex;
+    align-items:center;
+    padding:8px;
+    color:#0a66c2;
+}
+@media (min-width:768px){
+    span{
+        margin-left:8px;
 
-export default Main ;
+    }
+}
+
+`;
+
+export default Main;
