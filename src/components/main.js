@@ -17,7 +17,7 @@ background-color:#fff;
 border-radius:5px;
 position:relative;
 border:none;
-box_shadow: 0 0 0 1px rgb(0 0 0/15%), 0 0 0 rgb(0 0 0 /20%);
+box_shadow: 0 0 0 1px rgb(0 0 0/15%),0 0 0 rgb(0 0 0 /20%);
 `;
 const ShareBox=styled(CommomCard)`
 display:flex;
