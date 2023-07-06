@@ -26,6 +26,31 @@ const Main=(probs)=>{
     </button>
     </div>
     </ShareBox>
+    <div>
+        <Article>
+<SharedActor>
+    <a>
+        
+        <img src="/img/user.svg"/>
+        <div>
+        <span>Title</span>
+        <span>Info</span>
+        <span>Date</span>
+        </div>
+    </a>
+    <button>
+    <img src="/img/ellipsis-svgrepo.svg"/>
+    </button>
+</SharedActor>
+<Description>description</Description>
+<SharedImg>
+<a>
+    <img src="/img/pxfuel.jpg"/>
+</a>
+</SharedImg>
+
+        </Article>
+    </div>
     </Container>)
 }
 const Container=styled.div`
@@ -103,5 +128,81 @@ div{
 
 
 `;
+const Article = styled(CommomCard)`
+padding:0;
+margin:0 0 0px;
+overflow:visble;
+
+
+
+`;
+const SharedActor=styled.div`
+padding-right:40px;
+flex-wrap:nowrap;
+padding:12px 16px o;
+margin-bottom:8px;
+align-items:center;
+display:flex;
+a{
+    margin-right:12px;
+    flex-grow:1;
+    overflow:hidden;
+    display:flex;
+    text-decoration:none;
+    img{
+        width:48px;
+        height:48px;
+    }
+    &>div{
+        display:flex;
+        flex-direction:column;
+        flex-grow:1;
+        flex-basis:0;
+        margin-left:8px;
+        overflow:hidden;
+        span{
+            text-align:left;
+            &:first-child{
+                font-size:14px;
+                font-weight:700;
+                color:rgba(0,0,0,1);
+            }
+            &:nth-child(n+1){
+                font-size:12px;
+                color:rgba(0,0,0,0.6);
+            }
+        }
+    }
+}
+button{
+    position:absolute;
+    right:12px;
+    top:0;
+    background:transparent;
+    border:none;
+    outline:none;
+}`;
+const Description=styled.div`
+paddinng:0 16px;
+overflow:hidden;
+color:rgba(0,0,0,0.9);
+font-size:14px;
+text-align:left;
+
+
+`;
+const SharedImg=styled.div`
+margin-top:8px;
+width:100%;
+display:block;
+position:relative;
+background-color:#f9fafb;
+img{
+    object-fit:contain;
+    width:100%;
+    height:100%;
+}
+`;
+
 
 export default Main ;
